@@ -1,0 +1,17 @@
+{
+  "name": "Readbox Extension",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "An extension to add the current page to your Readbox.",
+  "browser_action": {
+    "default_icon": "dropbox.png",
+    "default_popup": "readbox.html"
+  },
+  "permissions": [
+    "https://api.dropbox.com/",
+    "https://api-content.dropbox.com/",
+    "<all_urls>",
+    "pageCapture",
+    "tabs"
+  ]
+}

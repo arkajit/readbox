@@ -17,10 +17,7 @@ var signUrl = function(api_path, use_content) {
   var base_url = use_content ? 'https://api-content.dropbox.com/1' :
       'https://api.dropbox.com/1';
   var dropbox_creds = {
-    'app_key': '<APP_KEY>',
-    'app_secret': '<APP_SECRET>',
-    'oauth_token': '<OAUTH_TOKEN>',
-    'oauth_token_secret': '<OAUTH_TOKEN_SECRET>',
+  // ADD APP KEY and SECRETS HERE.
   };
   var result = OAuthSimple().sign({
     action: use_content ? 'POST' : 'GET',
@@ -65,7 +62,3 @@ var wget = function(url) {
 var get_file_name = function(str) {
   return '/' + str.replace(/[^a-z]/gi, '') + '.html';
 };
-
-chrome.tabs.getSelected(null, function(tab) {
-  put_file(get_file_name(tab.title), wget(tab.url));
-});

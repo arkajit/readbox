@@ -1,9 +1,9 @@
 - Add support for login and storing oauth credentials in localStorage.
+- Also need shorter titles.
 - Consider adding source subfolders. E.g. use domain to create nytimes.com
   subfolder and put articles saved from that domain to that subfolder.
-- Also need shorter titles.
 - What about other file types? pdfs?
 - Scrape just the content?
-- Add a "Save to Readbox" option in context menu?
-- Should the extension be inside the omnibar instead of the side?
+- Should the extension be inside the omnibar instead of the side? (i.e. a
+  page_action instead of a browser_action)
 - Make it work for NYT multiple-page articles. Don't just want the first page.

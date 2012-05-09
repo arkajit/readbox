@@ -7,11 +7,18 @@
     "default_icon": "dropbox.png",
     "default_popup": "readbox.html"
   },
+  "background": {
+    "scripts": [ "lib.js", "context.js", "chrome_ex_oauthsimple.js" ]
+  },
   "permissions": [
     "https://api.dropbox.com/",
     "https://api-content.dropbox.com/",
     "<all_urls>",
     "pageCapture",
-    "tabs"
-  ]
+    "tabs",
+    "contextMenus"
+  ],
+  "icons": {
+    "16": "dropbox.png"
+  }
 }

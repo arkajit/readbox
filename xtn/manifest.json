@@ -8,7 +8,7 @@
     "default_popup": "readbox.html"
   },
   "background": {
-    "scripts": [ "lib.js", "context.js", "chrome_ex_oauthsimple.js" ]
+    "scripts": [ "chrome_ex_oauthsimple.js", "droplib.js", "dropcreds.js", "readbox.js", "context.js" ]
   },
   "permissions": [
     "https://api.dropbox.com/",

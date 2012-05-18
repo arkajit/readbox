@@ -1,8 +1,10 @@
+// Readbox Context Extension
+
 chrome.contextMenus.create({
   'title': 'Save to your Readbox',
   'contexts': ['page', 'link'],
   'onclick': function(info, tab) {
     var url = info['linkUrl'] || info['pageUrl'];
-    put_file(get_file_name(url), wget(url));
+    DropLib.putFile(ReadBox.getFileName(url), ReadBox.wget(url));
    }
 });
